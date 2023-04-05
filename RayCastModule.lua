@@ -12,7 +12,7 @@ module.LightDirection = Vector3.new(150, 200, 100)
 
 -- This constant is multiplied by the color3 value to make the color darker
 -- This is used when the point is under the shade
-module.ShadingConstant = 0.25
+module.ShadingConstant = 0.65
 
 -- RayCast parameters
 local RayParams = RaycastParams.new()
