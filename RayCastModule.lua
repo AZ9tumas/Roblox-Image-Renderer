@@ -12,13 +12,13 @@ module.LightDirection = Vector3.new(150, 200, 100)
 
 -- This constant is multiplied by the color3 value to make the color darker
 -- This is used when the point is under the shade
-module.ShadingConstant = 0.65
+module.ShadingConstant = 0.25
 
 -- RayCast parameters
 local RayParams = RaycastParams.new()
 RayParams.IgnoreWater = false
 
-function module:GetRay(x : number, z : number)
+function module:GetRay(x : number, z : number) : {Color : {}}
 
 	-- Cast a ray from 100 studs above the point towards the ground
 	local rayResult = workspace:Raycast(Vector3.new(x, 100, z), Vector3.new(0, -1000, 0), RayParams)
