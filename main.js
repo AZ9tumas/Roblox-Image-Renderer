@@ -8,30 +8,6 @@ let YRES = 50;
 
 var ColorInfo = [];
 
-/*
-    To convert the above Python program to Node.js, you can use the Jimp library to manipulate images. Here's an example of how you can create a new image, 
-    set a single pixel to a specific color, and then save the image:
-
-        const Jimp = require('jimp');
-
-        const width = 1000;
-        const height = 1000;
-        const color = { r: 100, g: 12, b: 13 };
-
-        const img = new Jimp(width, height, (err, image) => {
-            if (err) throw err;
-            image.setPixelColor(Jimp.rgbaToInt(color.r, color.g, color.b, 255), 10, 10);
-            image.write('test3.png');
-        });
-
-    Here, we're using the Jimp constructor to create a new image with the specified dimensions. We're also setting a color object with the RGB values we want to use for our pixel.
-
-    Inside the constructor's callback function, we're checking for any errors that might occur during the image creation process. Then, we're using the setPixelColor 
-    method to set the color of the pixel at (10, 10) to the color we defined earlier.
-
-    Finally, we're using the write method to save the image to a file named "test3.png".
-*/
-
 function RenderPixel(){
     console.log("Rendering begins...");
     
